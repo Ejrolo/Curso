@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="columns">
+      <h1>
+        {{ titulo  }}
+
+      </h1>
+
+      <label>Operando A</label>
+      <input type="text" class="form-control" [(ngModel)]="oA">
+
+      <label>Operando B</label>
+      <input type="text" class="form-control" [(ngModel)]="oB">
+      <p>
+        <button class="btn btn-primary" (click)="onSuma()">Sumar</button>
+      </p>
+      <p>
+        <label>Resultado: {{ suma }}</label>
+      </p>
+    </div>
+  </div>
+</div>
